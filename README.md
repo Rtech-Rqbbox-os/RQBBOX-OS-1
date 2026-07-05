@@ -61,4 +61,4 @@ RQBBOX OS 1 is the **umbrella application** for the entire RQBBOX ecosystem. It'
 
 ## License
 
-MIT © 2026 RhysTech
+**&copy; 2026 RhysTech. All rights reserved.**  RQBBOX&reg;, RQBBOX MODE&trade;, RBOWS&trade;, RQBBOX LIFE&trade; RhysTech.
