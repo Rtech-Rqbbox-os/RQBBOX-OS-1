@@ -1,0 +1,36 @@
+{
+  "name": "rqbbox-os-1",
+  "version": "1.0.0",
+  "description": "RQBBOX OS 1 - The complete RQBBOX ecosystem",
+  "main": "electron-main.js",
+  "author": "RhysTech",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win --x64",
+    "build:dir": "electron-builder --win --x64 --dir"
+  },
+  "build": {
+    "appId": "com.rtech.rqbbox-os-1",
+    "productName": "RQBBOX OS 1",
+    "directories": { "output": "dist" },
+    "files": ["index.html", "electron-main.js", "build/**/*"],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        { "target": "nsis", "arch": ["x64"] },
+        { "target": "portable", "arch": ["x64"] }
+      ]
+    },
+    "nsis": {
+      "oneClick": false, "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true, "createStartMenuShortcut": true,
+      "shortcutName": "RQBBOX OS 1"
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  }
+}
